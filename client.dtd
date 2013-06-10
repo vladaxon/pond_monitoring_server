@@ -1,0 +1,22 @@
+<!ELEMENT client (data,items?)>
+<!ATTLIST client version CDATA #REQUIRED>
+<!ELEMENT data (connection,request?)>
+<!ELEMENT connection (#PCDATA)>
+<!ELEMENT request (subject,(username,password)?)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT items (pond|monitor)+>
+<!ELEMENT pond (pid,pname,parea,psettl,fishspot,fishcost,fishes,other)>
+<!ELEMENT pid (#PCDATA)>
+<!ELEMENT pname (#PCDATA)>
+<!ELEMENT parea (#PCDATA)>
+<!ELEMENT psettl (#PCDATA)>
+<!ELEMENT fishspot (#PCDATA)>
+<!ELEMENT fishcost (#PCDATA)>
+<!ELEMENT fishes (#PCDATA)>
+<!ELEMENT other (#PCDATA)>
+<!ELEMENT monitor (pid,mdate,mtemp,mlevel)>
+<!ELEMENT mdate (#PCDATA)>
+<!ELEMENT mtemp (#PCDATA)>
+<!ELEMENT mlevel (#PCDATA)>
